@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1B6B5A;
+  --color-primary-lt: #2E8B7A;
+  --color-accent: #E8A838;
+  --color-accent-lt: #F5CC6A;
+  --color-bg: #FEFAF3;
+  --color-bg-soft: #F0EAD6;
+  --color-text: #1C2B2A;
+  --color-text-mid: #4A6360;
+  --color-text-soft: #8AABA8;
+  --color-border: rgba(27, 107, 90, 0.15);
+
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 4s ease-in-out 1s infinite;
+}
+
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(232, 168, 56, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(232, 168, 56, 0); }
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 2s ease-in-out infinite;
+}
