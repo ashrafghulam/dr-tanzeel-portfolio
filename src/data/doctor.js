@@ -24,9 +24,22 @@ export const doctor = {
 
   experience: [
     {
+      role: "Junior Resident (JR-1) — MD Pediatrics",
+      hospital: "Khandwa Govt. Medical College, MP",
+      duration: "2026 – Present",
+      status: "active",
+      highlights: [
+        "SNCU — Special Newborn Care Unit",
+        "Pediatric Ward — Inpatient Child Care",
+        "Pediatric OPD — Daily Consultations",
+        "Pediatric Sub-department Rotations",
+      ],
+    },
+    {
       role: "Medical Officer",
       hospital: "Govt. District Hospital, Chhatarpur, MP",
       duration: "Aug 2025 – Nov 2025",
+      status: "completed",
       highlights: [
         "Gynecology OPD — Patient consultation & care",
         "Labour Room — Day & Night duties",

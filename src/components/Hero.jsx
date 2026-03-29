@@ -12,9 +12,9 @@ const fadeUp = {
 };
 
 const stats = [
-  { label: "MBBS", value: "Done" },
-  { label: "MD", value: "Pursuing" },
-  { label: "Practice", value: "~2yr" },
+  { label: "Dept. of Pediatrics", value: "Junior Resident 1", sub: "Govt. Medical College, Khandwa" },
+  { label: "MD Pediatrics", value: "2026 – Ongoing" },
+  { label: "MBBS", value: "2019 – 2024" },
 ];
 
 function RangoliPattern() {
@@ -104,12 +104,15 @@ export default function Hero() {
               {stats.map((s) => (
                 <div
                   key={s.label}
-                  className="text-center px-4 py-3 rounded-xl bg-white/70 border border-border"
+                  className="text-center px-4 py-3 rounded-xl bg-white/70 border border-border flex-1"
                 >
-                  <p className="text-lg font-semibold text-primary font-heading">
+                  <p className="text-sm sm:text-base font-semibold text-primary font-heading leading-snug">
                     {s.value}
                   </p>
-                  <p className="text-xs text-text-soft">{s.label}</p>
+                  <p className="text-xs text-text-soft mt-0.5">{s.label}</p>
+                  {s.sub && (
+                    <p className="text-[10px] text-text-soft mt-0.5">{s.sub}</p>
+                  )}
                 </div>
               ))}
             </motion.div>
@@ -144,10 +147,10 @@ export default function Hero() {
             animate="visible"
             className="order-1 lg:order-2 relative flex justify-center"
           >
-            {/* Blob shape behind animation */}
+            {/* Doctor Lottie Animation */}
             <div className="relative w-72 h-72 sm:w-96 sm:h-96">
               <div
-                className="absolute inset-0 bg-primary/10 rounded-full"
+                className="absolute inset-0 bg-primary/10"
                 style={{
                   borderRadius: "42% 58% 70% 30% / 45% 45% 55% 55%",
                 }}
@@ -155,7 +158,7 @@ export default function Hero() {
               <Player
                 autoplay
                 loop
-                src="https://assets2.lottiefiles.com/packages/lf20_5njp3vgg.json"
+                src="https://assets1.lottiefiles.com/packages/lf20_vPnn3K.json"
                 className="w-full h-full relative z-10"
               />
             </div>
